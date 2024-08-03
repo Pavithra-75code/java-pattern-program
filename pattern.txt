@@ -1,0 +1,105 @@
+import java.util.*;
+public class BasicPattern {
+// call the method  in main can run a calling method.I created many method in the program.
+	static int i;
+	static int j;
+	public static void main(String[] args) {
+		
+		pattern8(5);
+		
+		}
+	static void pattern1(int n) {
+	for(int row=1;row<=n;row++) {
+		
+		for(int s=0;s<n-row;s++) {
+			System.out.print(" ");
+		}
+		for(int col=1;col<=row;col++) {
+			System.out.print("* ");
+		}
+		System.out.println();
+	}
+ }
+	static void pattern2(int n) {
+		for(int row=1;row<=n;row++) {
+			
+			for(int s=1;s<row;s++) {
+				System.out.print(" ");
+			}
+			for(int col=n;col>=row;col--) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	 }
+	static void pattern3(int n) {
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<i;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=n+1-i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		for(int i=2;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+	}
+	static void pattern6(int n) {
+		for(int i=1;i<=n;i++) {
+			for(j=1;j<=i;j++) {
+				System.out.print("* ");
+				}
+			System.out.println( );
+		}
+		for(int i=1;i<n;i++) {
+			for(int j=1;j<=n-i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+		
+	}
+	static void pattern7(int n) {
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<=n-i;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+				
+		}
+		for(int i=1;i<n;i++) {
+			for(int s=1;s<=i;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=n-i;j++) {
+				System.out.print("* ");
+			}
+			System.out.println( );
+		}
+		
+	}
+	static void pattern8(int n) {
+		for(int i=1;i<=n;i++) {
+			for(int s=1;s<i;s++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=n;j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+}
